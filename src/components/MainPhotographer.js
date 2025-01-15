@@ -29,7 +29,7 @@ export default function Main(data) {
     const photographer = data.photographer;
     const medias = data.medias;
   
-    const { search } = useParams();
+
 
 
 

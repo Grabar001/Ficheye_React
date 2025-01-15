@@ -4,9 +4,9 @@ import { useParams } from "react-router-dom";
 import { getPhotographerById, getMediasPhotographerById } from "../utils/api.js";  
 
 const Photographer = () => {
-    const { id, search } = useParams();
+    const { id } = useParams();
     const dataPhotograph = getPhotographerById(id);
-    const dataMediaPhotograph = getMediasPhotographerById(id, search);
+    const dataMediaPhotograph = getMediasPhotographerById(id);
     return (
     <>
     <Header data={dataPhotograph} />
